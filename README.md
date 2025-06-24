@@ -1,4 +1,4 @@
--- QUIZTREK --
+**QUIZTREK**
 
 This is an interactive quiz platform meant to help students and learners seek their potential.
 It's designed to be reliable, engaging and user-friendly.
@@ -9,18 +9,18 @@ pip install Pillow   --> used for resizing the images uploaded
 pip install pymongo  --> package to connect and interact with MongoDB
 pip install werkzeug  --> creates secured hashes (used for passwords, etc.)
 
-Note: 
+**Note:** 
 - I've set up a virtual environment so that installations and versions of packages or libraries are separate from other projects (also makes it easier to deploy -- which I plan on doing later for hosting)
 - Also two of the pages such as 'Contact' and 'Settings' return to the home page as they haven't been created
 - The delete function during create and edit mode seems to be deleting the filled options of all questions instead of only one --> a glitch that needs to be fixed later
 - Plan on making the create and edit modes more user-friendly and interactive (kind of like Kahoot)
 - Plan on adding a timer during game mode and perhaps a leaderboard
 
-Credits:
+**Credits:**
 - Coding2Go
 - Elisha Clarke-Rootham (for project idea)
 
-Inspiration:
+**Inspiration:**
 - Kahoot
 
-Copyright of QuizTrek -- Najiba Imam
+**Copyright of QuizTrek -- Najiba Imam**
