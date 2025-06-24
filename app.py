@@ -78,11 +78,8 @@ def register():
 
 # takes and renders the backend functions from the following pages
 app.register_blueprint(quiz_design)
-
 app.register_blueprint(explore_design)
-
 app.register_blueprint(game_design)
-
 app.register_blueprint(user_profile_design)
 
 # runs the the overall platform
