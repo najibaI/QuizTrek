@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QuizTrek | Register</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styleLoginRegister.css') }}">
+    </head>
+    <body>
+        <main>
+            <div>
+                <img src="{{ url_for('static', filename='images/quizTrekLogo.png') }}" height="120" width="120" alt="QuizTrek Logo">
+            </div>
+            <div class="register-container">
+                <h2 class="center-text">Create an Account</h2>
+                <form method="POST" action="/register">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" required>
+                
+                <div class="button-container">
+                    <button type="submit">Register</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Footer Section -->
+            <footer>
+                <p>&copy; 2025 QuizTrek. All rights reserved.</p>
+            </footer>
+
+            {% if error %}
+            <script>
+                alert("{{ error }}");
+            </script>
+            {% endif %}
+
+        </main>
+    </body>
+</html>

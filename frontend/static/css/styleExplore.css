@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --base-colr: #85b6be;
+  --button-colr: #008080;
+  --button-hover-colr: #006666;
+  --line-colr: #82652c;
+  --main-bg-colr: #dfdfdf;
+  --container-colr: white;
+  --hover-colr: #93c9cd;
+  --text-colr: #0d353a;
+  --accent-colr: #0d353a;
+  --secondary-text-colr: #11162c;
+}
+
+.explore-container h2 {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--text-colr);
+}
+
+
+/* quiz search styling */
+#quiz-search {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  width: 65%;
+  padding: 0.5rem;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  display: block;
+  margin: 1rem auto;
+  border: 1px solid var(--container-colr);
+  border-radius: 4px;
+}
+
+/* table container for scrollability on smaller screens */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* table styling */
+#quizzes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Quicksand', sans-serif;
+  color: var(--text-colr);
+}
+
+/* table headers */
+#quizzes-table th {
+  background-color: var(--hover-colr);
+  padding: 12px;
+  text-align: left;
+  border: 1px solid var(--line-colr);
+}
+
+/* table cells */
+#quizzes-table td {
+  padding: 10px;
+  border: 1px solid var(--line-colr);
+}
+
+/* zebra stripe rows -- easier to navigate and scroll for a specific quiz if quizzes have similar names */
+#quizzes-table tr:nth-child(even) {
+  background-color: var(--container-colr);
+}
+
+/* adjusting 'Quiz Name' column width */
+#quizzes-table th:nth-child(1),
+#quizzes-table td:nth-child(1) {
+  width: 35%;
+}
+
+/* adjusting 'Created By' column width */
+#quizzes-table th:nth-child(2),
+#quizzes-table td:nth-child(2) {
+  width: 35%;
+}
+
+/* style for Play buttons inside table */
+#quizzes-table button {
+  font-family: Quicksand, sans-serif;
+  background-color: var(--button-colr);
+  border: none;
+  color: var(--container-colr);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+#quizzes-table button:hover {
+  background-color: var(--button-hover-colr);
+}

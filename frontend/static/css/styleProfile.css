@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root {
+  --base-colr: #85b6be;
+  --button-colr: #008080;
+  --button-hover-colr: #006666;
+  --line-colr: #82652c;
+  --main-bg-colr: #dfdfdf;
+  --container-colr: white;
+  --hover-colr: #93c9cd;
+  --text-colr: #0d353a;
+  --accent-colr: #0d353a;
+  --secondary-text-colr: #11162c;
+}
+
+/* white container and styling */
+.profile-container {
+  font-family: Quicksand, sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--container-colr);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-container p {
+  font-weight: 500;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+/* table styling*/
+.quiz-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.quiz-table th, .quiz-table td {
+    border: 1px solid var(--line-colr);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+/* adjusting 'Quiz Name' column width */
+.quiz-table tr:nth-child(1),
+.quiz-table th:nth-child(1) {
+  width: 45%;
+}
+
+.quiz-table th {
+    background-color: #f5f5f5;
+}
+
+.quiz-table td a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: var(--button-colr);
+}
+
+/* general button styling*/
+button {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-right: 4px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 'Edit' and 'Delete' buttons colour styling*/
+.edit-button {
+  background-color: var(--button-colr);
+}
+
+.edit-button:hover {
+  background-color: var(--button-hover-colr);
+} 
+
+.delete-button {
+  background-color: #da1a2d;
+}
+
+.delete-button:hover {
+  background-color: #bd1e2e;
+} 

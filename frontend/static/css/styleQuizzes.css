@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --button-colr: #008080;
+  --button-hover-colr: #006666;
+  --line-colr: #82652c;
+  --main-bg-colr: #dfdfdf;
+  --container-colr: white;
+  --hover-colr: #006666;;
+  --text-colr: #0d353a;
+  --accent-colr: #0d353a;
+  --secondary-text-colr: #11162c;
+}
+
+.quiz-container h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-exterior {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center; /* center the whole label+input horizontally */
+  align-items: center; /* vertical alignment */
+}
+
+.form-exterior label {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form-exterior input[type="text"] { 
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 15px; 
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;  
+  padding: 2px;
+}
+
+.form-exterior button {
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  width: 210px;
+  padding: 10px;
+  background-color: var(--button-colr);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-exterior button:hover {
+  background-color: var(--button-hover-colr);
+}
+
+.quiz-container label { 
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  gap: 0.5rem; /* spacing */
+}
+
+.question-block {
+  background-color: var(--container-colr);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.question-block input[type="text"], select, input[type="file"] {
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  width: 100%;   /* make input take full width of the container */
+  max-width: 600px;
+  padding: 3px;     
+  font-size: 14.5px;   
+  box-sizing: border-box; /* include padding in width calculation */
+}
+
+.question-block label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.button-container {
+  display: flex; 
+  gap: 30px; /* keeping some space between buttons */
+  margin-top: 20px;
+  justify-content: center; /* centering buttons horizontally */
+}
+
+.delete-button {
+  display: flex; 
+  gap: 30px; 
+  margin-top: 20px;
+  justify-content: left;
+}
+
+.image-preview img {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.options input[type="text"] {
+  margin-bottom: 10px; /* adds vertical spacing between options */
+  display: block; 
+}
+
+button {
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  width: 170px;
+  padding: 10px;
+  background-color: var(--button-colr);
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+button:hover {
+  background-color: var(--button-hover-colr);
+}

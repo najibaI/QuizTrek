@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root {
+  --base-colr: #85b6be;
+  --button-colr: #008080;
+  --button-hover-colr: #006666;
+  --line-colr: #82652c;
+  --main-bg-colr: #dfdfdf;
+  --container-colr: white;
+  --hover-colr: #93c9cd;
+  --text-colr: #0d353a;
+  --accent-colr: #0d353a;
+  --secondary-text-colr: #11162c;
+}
+
+
+html{
+  font-family: Quicksand, sans-serif;
+  line-height: 1.5rem;
+}
+
+main {
+  background-color: var(--main-bg-colr);
+  padding: min(30px, 7%); 
+}
+
+.exit-function button {
+    font-family: Quicksand, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--button-hover-colr);
+    color: var(--container-colr);
+    border: none;
+    border-radius: 5px;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: var(--container-colr);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#question-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.option-btn {
+    font-family: Quicksand, sans-serif;
+    color: var(--secondary-text-colr);
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-btn:hover {
+    background: #ddd;
+}
+
+/* option buttons display colours according to what's correct or wrong */
+.option-btn.correct {
+    background-color: #c8e6c9;
+}
+
+.option-btn.wrong {
+    background-color: #ffcdd2;
+}
+
+.short-answer-input {
+    font-family: Quicksand, sans-serif;
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    font-family: Quicksand, sans-serif;
+    color: var(--secondary-text-colr);
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #eee;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer-feedback {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--text-colr);
+}
+
+#next-button {
+    font-family: Quicksand, sans-serif;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    display: none;
+    cursor: pointer;
+    background-color: var(--button-colr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#score-display {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* digital whiteboard styling */
+#whiteboard {
+    background-color: white;
+    cursor: crosshair;
+}
+
+#clear-whiteboard {
+    font-family: Quicksand, sans-serif;
+    padding: 0.5rem 1rem;
+    background-color: var(--button-colr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clear-whiteboard:hover {
+    background-color: var(--button-hover-colr);
+}
+
+#whiteboard-tools label {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  color: var(--text-colr);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#whiteboard-tools input[type="color"],
+#whiteboard-tools input[type="range"] {
+  cursor: pointer;
+}
+
+#eraser-toggle {
+  font-family: Quicksand, sans-serif;
+  background-color: var(--button-colr);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#eraser-toggle.active {
+  background-color: #d9534f; /* red for active eraser */
+}
+
+#whiteboard-wrapper {
+  max-width: 650px;
+  margin: 2rem auto 3rem auto;
+  background: var(--container-colr);
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#whiteboard-wrapper h3 {
+  margin-bottom: 1rem;
+  color: var(--text-colr);
+  font-weight: 600;
+}
+
+
+main footer {
+  text-align: center;
+  color: var(--text-colr);
+  padding: 1rem; /* add padding for better spacing */
+  width: 100%;
+  box-sizing: border-box; /* include padding in width calculation */
+  position: relative; /* footer is positioned correctly */
+  z-index: 1; /* this ensures the footer is above other content */
+  margin-top: auto; /* push footer to the bottom of the page */
+}

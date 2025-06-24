@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --base-colr: #008080;
+    --line-colr: #82652c;
+    --main-bg-colr: #dfdfdf;
+    --container-colr: white;
+    --hover-colr:  #006666;
+    --text-colr: #0d353a;
+    --accent-colr: #0d353a;
+    --secondary-text-colr: #11162c;
+  }
+  
+  body {
+    background-color: var(--main-bg-colr);
+    font-family: Quicksand, sans-serif;
+    color: var(--text-colr);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    background-color: var(--container-colr);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .register-container {
+    background-color: var(--container-colr);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-height: 430px;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  input[type="text"], 
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--line-colr);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-family: Quicksand, sans-serif;
+    font-size: 15px;
+    width: 160px;
+    padding: 10px;
+    background-color: var(--base-colr);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--hover-colr);
+  }
+
+  main footer {
+    text-align: center;
+    color: var(--text-colr);
+    padding: 1rem; /* add padding for better spacing */
+    width: 100%;
+    box-sizing: border-box; /* include padding in width calculation */
+    position: relative; /* footer is positioned correctly */
+    margin-top: auto; /* push footer to the bottom of the page */
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>QuizTrek | Play Quiz</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styleGame.css') }}" />
+        <script src="{{ url_for('static', filename='javascripts/game.js') }}" defer></script>
+        <!--
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styleHome.css') }}" />
+        <script src="{{ url_for('static', filename='javascripts/sidebarFunctions.js') }}" defer></script>
+        -->
+    </head>
+    <body>
+        <main>
+            <div class="game-container">
+                <h2 id="quiz-title"></h2>
+                <div id="question-container">
+                    <p id="question-text"></p>
+                    <div id="options-container"></div>
+                </div>
+                <button id="next-button">Next</button>
+                <p id="score-display"></p>
+                <a href="{{ url_for('game.exit_quiz') }}">
+                    <div class="exit-function">
+                        <button>Exit Quiz</button>
+                    </div>
+                </a>
+            </div>
+            <div id="whiteboard-wrapper" style="display:none;">
+                <h3>Digital Whiteboard</h3>
+                <div id="whiteboard-tools" style="margin-bottom: 0.5rem; display: flex; justify-content: center; gap: 1rem; align-items: center;">
+                <label>
+                    Color:
+                    <input type="color" id="color-picker" value="#11162c" />
+                </label>
+                <label>
+                    Thickness:
+                    <input type="range" id="thickness-slider" min="1" max="20" value="2" />
+                </label>
+                <button id="eraser-toggle" type="button">Eraser Off</button>
+                <button id="clear-whiteboard" type="button">Clear Whiteboard</button>
+                </div>
+                <canvas id="whiteboard" width="600" height="400" style="border:1px solid #ccc; border-radius: 8px; background-color: white;"></canvas>
+            </div>
+            <!-- Footer Section -->
+            <footer>
+                <p>&copy; 2025 QuizTrek. All rights reserved.</p>
+            </footer>
+        </main>
+    </body>
+</html>
