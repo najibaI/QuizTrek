@@ -3,7 +3,7 @@
 This is an interactive quiz platform meant to help students and learners seek their potential.
 It's designed to be reliable, engaging and user-friendly.
 
-For installation requirements:
+**For installation requirements:**
 - pip install Flask   --> used for the web framework for the backend development
 - pip install Pillow   --> used for resizing the images uploaded
 - pip install pymongo  --> package to connect and interact with MongoDB
