@@ -18,7 +18,7 @@ It's designed to be reliable, engaging and user-friendly.
 - Plan on adding a timer during game mode and perhaps a leaderboard
 
 **Credits:**
-- Coding2Go
+- Coding2Go YT channel
 - Elisha Clarke-Rootham (for project idea)
 
 **Inspiration:**
