@@ -4,10 +4,10 @@ This is an interactive quiz platform meant to help students and learners seek th
 It's designed to be reliable, engaging and user-friendly.
 
 For installation requirements:
-pip install Flask   --> used for the web framework for the backend development
-pip install Pillow   --> used for resizing the images uploaded
-pip install pymongo  --> package to connect and interact with MongoDB
-pip install werkzeug  --> creates secured hashes (used for passwords, etc.)
+- pip install Flask   --> used for the web framework for the backend development
+- pip install Pillow   --> used for resizing the images uploaded
+- pip install pymongo  --> package to connect and interact with MongoDB
+- pip install werkzeug  --> creates secured hashes (used for passwords, etc.)
 
 **Note:** 
 - I've set up a virtual environment so that installations and versions of packages or libraries are separate from other projects (also makes it easier to deploy -- which I plan on doing later for hosting)
