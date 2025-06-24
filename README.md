@@ -1,4 +1,5 @@
 -- QUIZTREK --
+
 This is an interactive quiz platform meant to help students and learners seek their potential.
 It's designed to be reliable, engaging and user-friendly.
 
