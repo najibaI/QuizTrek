@@ -93,9 +93,6 @@ def handle_edit_quiz(quiz_id):
 
     quiz = quizzes.find_one({"_id": ObjectId(quiz_id), "created_by": session["user"]})
 
-    if not quiz:
-        return "Quiz not found or you do not have permission to edit it.", 404 # display error 404 page with the following message
-
     if request.method == "POST":
         # updates quiz logic
         updated_questions = []
@@ -151,7 +148,10 @@ def handle_edit_quiz(quiz_id):
 
     return render_template("edit-quiz.html", quiz=quiz)
 
-@quiz_design.route("/delete-quiz/<quiz_id>")
+@quiz_design.route("/delete-quiz/<quiz_id>", methods=["POST"])
 def delete_quiz(quiz_id):
+    if "user" not in session:
+        return redirect("/login")
+    
     quizzes.delete_one({"_id": ObjectId(quiz_id)})
     return redirect("/profile")
