@@ -24,4 +24,7 @@ It's designed to be reliable, engaging and user-friendly.
 **Inspiration:**
 - Kahoot
 
+**Demo Link:**
+https://drive.google.com/file/d/1erfL3CGdnMs-nc_B3_MY-XxPdhi4DWJM/view?usp=sharing
+
 **Copyright of QuizTrek -- Najiba Imam**
