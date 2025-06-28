@@ -19,7 +19,7 @@ It's designed to be reliable, engaging and user-friendly.
 
 **Credits:**
 - Coding2Go YT channel
-- Elisha Clarke-Rootham (for project idea)
+- My mentee, Elisha Clarke-Rootham (for project idea)
 
 **Inspiration:**
 - Kahoot
